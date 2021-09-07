@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Talabat2">
+  <ClassDiagramComponents>
+    <Class name="Customer" package="" visibility="public" xPosition="327.0" yPosition="750.0">
+      <Fields>
+        <Field name="mob_number" type="String" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="latestOrders" type="ArrayList&lt;Order&gt;" visibility="public"/>
+        <Field name="currOrder" type="Order" visibility="public"/>
+        <Field name="foundCustomer" type="int" visibility="public" isStatic="true"/>
+        <Field name="Order" type="int" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="String" name="password"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="String" name="password"/>
+          <Argument type="String" name="mob_number"/>
+          <Argument type="String" name="address"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setMob_number" returnType="void" visibility="public">
+          <Argument type="String" name="mob_number"/>
+        </Method>
+        <Method name="setAddress" returnType="void" visibility="public">
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="getMob_number" returnType="String" visibility="public"/>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="createOrder" returnType="void" visibility="public">
+          <Argument type="int" name="restId"/>
+        </Method>
+        <Method name="validate_login" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="signUp" returnType="void" visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="String" name="pass"/>
+          <Argument type="String" name="mob_number"/>
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="talab" returnType="void" visibility="public">
+          <Argument type="Meal" name="m"/>
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="submitOrder" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="customerOrOwner" package="" visibility="public" xPosition="828.0" yPosition="1256.0">
+      <Fields>
+        <Field name="panel" type="JPanel" visibility="package"/>
+        <Field name="Talabat" type="JLabel" visibility="package"/>
+        <Field name="ownerbutton" type="JButton" visibility="package"/>
+        <Field name="c00BackGround" type="ImageIcon" visibility="package"/>
+        <Field name="cusbutton" type="ImageIcon" visibility="package"/>
+        <Field name="cusphoto" type="ImageIcon" visibility="package"/>
+        <Field name="ownbutton" type="ImageIcon" visibility="package"/>
+        <Field name="ownphoto" type="ImageIcon" visibility="package"/>
+        <Field name="owner" type="Boolean" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="demomainuser" package="" visibility="public" xPosition="568.0" yPosition="1256.0">
+      <Fields>
+        <Field name="pbg" type="JPanel" visibility="package"/>
+        <Field name="meal_part" type="JPanel" visibility="package"/>
+        <Field name="co" type="Color" visibility="package"/>
+        <Field name="scrollFrame" type="JScrollPane" visibility="package"/>
+        <Field name="Foundmeal" type="int" visibility="package"/>
+        <Field name="bg" type="JLabel" visibility="package"/>
+        <Field name="delivery_man" type="JLabel" visibility="package"/>
+        <Field name="toptext" type="JLabel" visibility="package"/>
+        <Field name="mealpart_bg" type="JLabel" visibility="package"/>
+        <Field name="mealpart_outerframe" type="JLabel" visibility="package"/>
+        <Field name="customerIcon" type="JButton" visibility="package"/>
+        <Field name="checkoutBG" type="JLabel" visibility="package"/>
+        <Field name="checkout" type="JLabel" visibility="package"/>
+        <Field name="checkoutName" type="JLabel" visibility="package"/>
+        <Field name="checkoutPrice" type="JLabel" visibility="package"/>
+        <Field name="checkoutDone" type="JButton" visibility="package"/>
+        <Field name="checkoutOrderDone" type="JLabel" visibility="package"/>
+        <Field name="meal" type="JLabel[]" visibility="package"/>
+        <Field name="name" type="JLabel[]" visibility="package"/>
+        <Field name="price" type="JLabel[]" visibility="package"/>
+        <Field name="button" type="JButton[]" visibility="package"/>
+        <Field name="add_button" type="JButton[]" visibility="package"/>
+        <Field name="min_button" type="JButton[]" visibility="package"/>
+        <Field name="add_but" type="JLabel[]" visibility="package"/>
+        <Field name="size" type="int" visibility="package" isStatic="true"/>
+        <Field name="imgxbound" type="int" visibility="package"/>
+        <Field name="imgybound" type="int" visibility="package"/>
+        <Field name="quantity" type="int" visibility="package"/>
+        <Field name="ltalabat" type="JButton" visibility="package"/>
+        <Field name="bgimage" type="ImageIcon" visibility="package"/>
+        <Field name="d_man" type="ImageIcon" visibility="package"/>
+        <Field name="TOPTEXT_IMAGE" type="ImageIcon" visibility="package"/>
+        <Field name="mealf_image" type="ImageIcon" visibility="package"/>
+        <Field name="meal_IMAGE" type="ImageIcon" visibility="package"/>
+        <Field name="talab_image" type="ImageIcon" visibility="package"/>
+        <Field name="custIcon" type="ImageIcon" visibility="package"/>
+        <Field name="checkoutBorder" type="ImageIcon" visibility="package"/>
+        <Field name="doneButton" type="ImageIcon" visibility="package"/>
+        <Field name="add_img" type="ImageIcon" visibility="package"/>
+        <Field name="min_img" type="ImageIcon" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Login" package="" visibility="public" xPosition="369.0" yPosition="1256.0">
+      <Fields>
+        <Field name="leftpanel" type="JPanel" visibility="package"/>
+        <Field name="rightpanel" type="JPanel" visibility="package"/>
+        <Field name="llogo" type="JLabel" visibility="package"/>
+        <Field name="loginbut" type="JButton" visibility="package"/>
+        <Field name="tuser" type="JTextField" visibility="package"/>
+        <Field name="tpass" type="JPasswordField" visibility="package"/>
+        <Field name="c" type="Color" visibility="package"/>
+        <Field name="clabel" type="Color" visibility="package"/>
+        <Field name="tborder" type="Color" visibility="package"/>
+        <Field name="lpersonimage" type="JLabel" visibility="package"/>
+        <Field name="lcircleimage" type="JLabel" visibility="package"/>
+        <Field name="leftBG" type="JLabel" visibility="package"/>
+        <Field name="login" type="ImageIcon" visibility="package"/>
+        <Field name="person" type="ImageIcon" visibility="package"/>
+        <Field name="circle" type="ImageIcon" visibility="package"/>
+        <Field name="BackgroundLeft" type="ImageIcon" visibility="package"/>
+        <Field name="sep1" type="JSeparator" visibility="package"/>
+        <Field name="sep2" type="JSeparator" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="LoginOrsignUp" package="" visibility="public" xPosition="1075.0" yPosition="1826.0">
+      <Fields>
+        <Field name="leftpanel" type="JPanel" visibility="package"/>
+        <Field name="rightpanel" type="JPanel" visibility="package"/>
+        <Field name="l1" type="JLabel" visibility="package"/>
+        <Field name="rbg" type="JLabel" visibility="package"/>
+        <Field name="logbut" type="JButton" visibility="package"/>
+        <Field name="signbut" type="JButton" visibility="package"/>
+        <Field name="c" type="Color" visibility="package"/>
+        <Field name="bg" type="ImageIcon" visibility="package"/>
+        <Field name="login" type="ImageIcon" visibility="package"/>
+        <Field name="signup" type="ImageIcon" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Loginowner" package="" visibility="public" xPosition="2170.0" yPosition="1824.0">
+      <Fields>
+        <Field name="leftpanel" type="JPanel" visibility="package"/>
+        <Field name="rightpanel" type="JPanel" visibility="package"/>
+        <Field name="llogo" type="JLabel" visibility="package"/>
+        <Field name="loginbut" type="JButton" visibility="package"/>
+        <Field name="tuser" type="JTextField" visibility="package"/>
+        <Field name="tpass" type="JPasswordField" visibility="package"/>
+        <Field name="c" type="Color" visibility="package"/>
+        <Field name="clabel" type="Color" visibility="package"/>
+        <Field name="tborder" type="Color" visibility="package"/>
+        <Field name="lpersonimage" type="JLabel" visibility="package"/>
+        <Field name="lcircleimage" type="JLabel" visibility="package"/>
+        <Field name="leftBG" type="JLabel" visibility="package"/>
+        <Field name="login" type="ImageIcon" visibility="package"/>
+        <Field name="person" type="ImageIcon" visibility="package"/>
+        <Field name="circle" type="ImageIcon" visibility="package"/>
+        <Field name="BackgroundLeft" type="ImageIcon" visibility="package"/>
+        <Field name="sep1" type="JSeparator" visibility="package"/>
+        <Field name="sep2" type="JSeparator" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Main" package="" visibility="public" xPosition="1890.0" yPosition="1874.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Main_owner" package="" visibility="public" xPosition="1339.0" yPosition="1256.0">
+      <Fields>
+        <Field name="panel1" type="JPanel" visibility="package"/>
+        <Field name="tborder" type="Color" visibility="package"/>
+        <Field name="bg" type="JLabel" visibility="package"/>
+        <Field name="bgimg" type="ImageIcon" visibility="package"/>
+        <Field name="person" type="JButton" visibility="package"/>
+        <Field name="personimg" type="ImageIcon" visibility="package"/>
+        <Field name="delivery" type="JLabel" visibility="package"/>
+        <Field name="deliveryimg" type="ImageIcon" visibility="package"/>
+        <Field name="ltalabat" type="JLabel" visibility="package"/>
+        <Field name="restaurant_name" type="JLabel" visibility="package"/>
+        <Field name="order" type="JLabel" visibility="package"/>
+        <Field name="orderimg" type="ImageIcon" visibility="package"/>
+        <Field name="showorder" type="JButton" visibility="package"/>
+        <Field name="showorderimg" type="ImageIcon" visibility="package"/>
+        <Field name="addmeal" type="JLabel" visibility="package"/>
+        <Field name="addname" type="JLabel" visibility="package"/>
+        <Field name="adddescribtion" type="JLabel" visibility="package"/>
+        <Field name="addprice" type="JLabel" visibility="package"/>
+        <Field name="addid" type="JLabel" visibility="package"/>
+        <Field name="taddname" type="JTextField" visibility="package"/>
+        <Field name="tadddescribtion" type="JTextField" visibility="package"/>
+        <Field name="taddprice" type="JTextField" visibility="package"/>
+        <Field name="taddid" type="JTextField" visibility="package"/>
+        <Field name="editmeal" type="JLabel" visibility="package"/>
+        <Field name="editname" type="JLabel" visibility="package"/>
+        <Field name="editoldname" type="JLabel" visibility="package"/>
+        <Field name="editdescribtion" type="JLabel" visibility="package"/>
+        <Field name="editprice" type="JLabel" visibility="package"/>
+        <Field name="editid" type="JLabel" visibility="package"/>
+        <Field name="teditname" type="JTextField" visibility="package"/>
+        <Field name="teditoldname" type="JTextField" visibility="package"/>
+        <Field name="teditescribtion" type="JTextField" visibility="package"/>
+        <Field name="teditprice" type="JTextField" visibility="package"/>
+        <Field name="teditid" type="JTextField" visibility="package"/>
+        <Field name="removemeal" type="JLabel" visibility="package"/>
+        <Field name="removename" type="JLabel" visibility="package"/>
+        <Field name="errorremove" type="JLabel" visibility="package"/>
+        <Field name="tremovename" type="JTextField" visibility="package"/>
+        <Field name="addborder" type="JLabel" visibility="package"/>
+        <Field name="editborder" type="JLabel" visibility="package"/>
+        <Field name="removeborder" type="JLabel" visibility="package"/>
+        <Field name="erroradd" type="JLabel" visibility="package"/>
+        <Field name="erroredit" type="JLabel" visibility="package"/>
+        <Field name="borderimg" type="ImageIcon" visibility="package"/>
+        <Field name="sep1" type="JSeparator" visibility="package"/>
+        <Field name="sep2" type="JSeparator" visibility="package"/>
+        <Field name="sep3" type="JSeparator" visibility="package"/>
+        <Field name="sep4" type="JSeparator" visibility="package"/>
+        <Field name="sep5" type="JSeparator" visibility="package"/>
+        <Field name="sep6" type="JSeparator" visibility="package"/>
+        <Field name="sep7" type="JSeparator" visibility="package"/>
+        <Field name="sep8" type="JSeparator" visibility="package"/>
+        <Field name="sep9" type="JSeparator" visibility="package"/>
+        <Field name="sep10" type="JSeparator" visibility="package"/>
+        <Field name="addimage" type="JButton" visibility="package"/>
+        <Field name="editimage" type="JButton" visibility="package"/>
+        <Field name="removeimage" type="JButton" visibility="package"/>
+        <Field name="addimg" type="ImageIcon" visibility="package"/>
+        <Field name="editimg" type="ImageIcon" visibility="package"/>
+        <Field name="removeimg" type="ImageIcon" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Meal" package="" visibility="public" xPosition="327.0" yPosition="218.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="price" type="float" visibility="private"/>
+        <Field name="ID" type="int" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="description"/>
+          <Argument type="float" name="price"/>
+          <Argument type="int" name="ID"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="description"/>
+          <Argument type="float" name="price"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setQuantity" returnType="void" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="getQuantity" returnType="int" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setDescription" returnType="void" visibility="public">
+          <Argument type="String" name="description"/>
+        </Method>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="float" name="price"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="getPrice" returnType="float" visibility="public"/>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Order" package="" visibility="public" xPosition="959.0" yPosition="80.0">
+      <Fields>
+        <Field name="globalId" type="int" visibility="private" isStatic="true"/>
+        <Field name="orderId" type="int" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="additional_note" type="String" visibility="private"/>
+        <Field name="order_date" type="String" visibility="private"/>
+        <Field name="meals" type="ArrayList&lt;Meal&gt;" visibility="public"/>
+        <Field name="restId" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getRestId" returnType="int" visibility="public"/>
+        <Method name="setRestId" returnType="void" visibility="public">
+          <Argument type="int" name="restId"/>
+        </Method>
+        <Method name="setId" returnType="void" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setMeals" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Meal&gt;" name="meals"/>
+        </Method>
+        <Method name="addMeal" returnType="void" visibility="public">
+          <Argument type="Meal" name="meal"/>
+        </Method>
+        <Method name="setQuantity" returnType="void" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="setAdditional_note" returnType="void" visibility="public">
+          <Argument type="String" name="additional_note"/>
+        </Method>
+        <Method name="setOrder_date" returnType="void" visibility="public">
+          <Argument type="String" name="order_date"/>
+        </Method>
+        <Method name="getQuantity" returnType="int" visibility="public"/>
+        <Method name="getAdditional_note" returnType="String" visibility="public"/>
+        <Method name="getOrder_date" returnType="String" visibility="public"/>
+        <Method name="getTotalPrice" returnType="float" visibility="public">
+          <Argument type="Order" name="o"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Owner" package="" visibility="public" xPosition="1401.0" yPosition="241.0">
+      <Fields>
+        <Field name="restaurant" type="Restaurant" visibility="package"/>
+        <Field name="foundOwner" type="int" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="String" name="password"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="String" name="password"/>
+          <Argument type="String" name="rName"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="validate_login" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="signUp" returnType="void" visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="String" name="pass"/>
+          <Argument type="String" name="restaurant_name"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Person" package="" visibility="public" isAbstract="true" xPosition="1544.0" yPosition="923.0">
+      <Fields>
+        <Field name="username" type="String" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="username"/>
+          <Argument type="String" name="password"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setUsername" returnType="void" visibility="public">
+          <Argument type="String" name="username"/>
+        </Method>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="getUsername" returnType="String" visibility="public"/>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="signUp" returnType="void" visibility="public">
+          <Argument type="String" name="uname"/>
+          <Argument type="String" name="pass"/>
+        </Method>
+        <Method name="validate_login" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="username"/>
+          <Argument type="String" name="password"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProfileCutomer" package="" visibility="public" xPosition="315.0" yPosition="1759.0">
+      <Fields>
+        <Field name="panel" type="JPanel" visibility="package"/>
+        <Field name="customerName" type="JLabel" visibility="package"/>
+        <Field name="custName" type="JTextField" visibility="package"/>
+        <Field name="submit" type="JButton" visibility="package"/>
+        <Field name="sep1" type="JSeparator" visibility="package"/>
+        <Field name="profile" type="ImageIcon" visibility="package"/>
+        <Field name="BackGorund" type="ImageIcon" visibility="package"/>
+        <Field name="subimtBUTT" type="ImageIcon" visibility="package"/>
+        <Field name="BGForOrder" type="ImageIcon" visibility="package"/>
+        <Field name="BGForInfo" type="ImageIcon" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Customer" name="customer"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProfileOwner" package="" visibility="public" xPosition="815.0" yPosition="1604.0">
+      <Fields>
+        <Field name="OwnerProfilePanel" type="JPanel" visibility="package"/>
+        <Field name="profileOwner" type="JLabel" visibility="package"/>
+        <Field name="ownerSubmit" type="JButton" visibility="package"/>
+        <Field name="OwnerUserText" type="JTextField" visibility="package"/>
+        <Field name="OwnerPassText" type="JPasswordField" visibility="package"/>
+        <Field name="SEP1" type="JSeparator" visibility="package"/>
+        <Field name="OwnerProfile" type="ImageIcon" visibility="package"/>
+        <Field name="BG" type="ImageIcon" visibility="package"/>
+        <Field name="restaurantBG" type="ImageIcon" visibility="package"/>
+        <Field name="OwnerInfoBG" type="ImageIcon" visibility="package"/>
+        <Field name="SubmitBut" type="ImageIcon" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Owner" name="owner"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Restaurant" package="" visibility="public" xPosition="1890.0" yPosition="371.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="phone" type="String" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="meals" type="ArrayList&lt;Meal&gt;" visibility="public"/>
+        <Field name="orders" type="ArrayList&lt;Order&gt;" visibility="public"/>
+        <Field name="ID" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getPhone" returnType="String" visibility="public"/>
+        <Method name="setPhone" returnType="void" visibility="public">
+          <Argument type="String" name="phone"/>
+        </Method>
+        <Method name="setAddress" returnType="void" visibility="public">
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="getID" returnType="int" visibility="public"/>
+        <Method name="setID" returnType="void" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="setDescription" returnType="void" visibility="public">
+          <Argument type="String" name="description"/>
+        </Method>
+        <Method name="CheckMeal" returnType="boolean" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="addmeal" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="description"/>
+          <Argument type="float" name="price"/>
+          <Argument type="int" name="ID"/>
+        </Method>
+        <Method name="removeMeal" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="editMeals" returnType="void" visibility="public">
+          <Argument type="String" name="oMeal"/>
+          <Argument type="String" name="newName"/>
+          <Argument type="String" name="newDescription"/>
+          <Argument type="float" name="newPrice"/>
+        </Method>
+        <Method name="checkCode" returnType="boolean" visibility="public">
+          <Argument type="int" name="ID"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="RestaurantMain" package="" visibility="public" xPosition="1075.0" yPosition="1256.0">
+      <Fields>
+        <Field name="pbg" type="JPanel" visibility="package"/>
+        <Field name="meal_part" type="JPanel" visibility="package"/>
+        <Field name="co" type="Color" visibility="package"/>
+        <Field name="scrollFrame" type="JScrollPane" visibility="package"/>
+        <Field name="bg" type="JLabel" visibility="package"/>
+        <Field name="delivery_man" type="JLabel" visibility="package"/>
+        <Field name="toptext" type="JLabel" visibility="package"/>
+        <Field name="mealpart_bg" type="JLabel" visibility="package"/>
+        <Field name="mealpart_outerframe" type="JLabel" visibility="package"/>
+        <Field name="customerIcon" type="JButton" visibility="package"/>
+        <Field name="Name" type="JLabel[]" visibility="package"/>
+        <Field name="about" type="JLabel[]" visibility="package"/>
+        <Field name="button" type="JButton[]" visibility="package"/>
+        <Field name="knowRestaurat" type="int" visibility="public" isStatic="true"/>
+        <Field name="ltalabat" type="JLabel" visibility="package"/>
+        <Field name="bgimage" type="ImageIcon" visibility="package"/>
+        <Field name="d_man" type="ImageIcon" visibility="package"/>
+        <Field name="TOPTEXT_IMAGE" type="ImageIcon" visibility="package"/>
+        <Field name="mealf_image" type="ImageIcon" visibility="package"/>
+        <Field name="meal_IMAGE" type="ImageIcon" visibility="package"/>
+        <Field name="backRes" type="ImageIcon" visibility="package"/>
+        <Field name="custIcon" type="ImageIcon" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Rmeal_owner" package="" visibility="public" xPosition="1606.0" yPosition="1256.0">
+      <Fields>
+        <Field name="panel1" type="JPanel" visibility="package"/>
+        <Field name="tborder" type="Color" visibility="package"/>
+        <Field name="meal_part" type="JPanel" visibility="package"/>
+        <Field name="scrollFrame" type="JScrollPane" visibility="package"/>
+        <Field name="bg" type="JLabel" visibility="package"/>
+        <Field name="mealpart_bg" type="JLabel" visibility="package"/>
+        <Field name="mealpart_outerframe" type="JLabel" visibility="package"/>
+        <Field name="c" type="Color" visibility="package"/>
+        <Field name="meal_IMAGE" type="ImageIcon" visibility="package"/>
+        <Field name="bgimage" type="ImageIcon" visibility="package"/>
+        <Field name="d_man" type="ImageIcon" visibility="package"/>
+        <Field name="TOPTEXT_IMAGE" type="ImageIcon" visibility="package"/>
+        <Field name="mealf_image" type="ImageIcon" visibility="package"/>
+        <Field name="talab_image" type="ImageIcon" visibility="package"/>
+        <Field name="custIcon" type="ImageIcon" visibility="package"/>
+        <Field name="checkoutBorder" type="ImageIcon" visibility="package"/>
+        <Field name="done_image" type="ImageIcon" visibility="package"/>
+        <Field name="waiting_bg" type="ImageIcon" visibility="package"/>
+        <Field name="bgimg" type="ImageIcon" visibility="package"/>
+        <Field name="person" type="JButton" visibility="package"/>
+        <Field name="personimg" type="ImageIcon" visibility="package"/>
+        <Field name="delivery" type="JLabel" visibility="package"/>
+        <Field name="deliveryimg" type="ImageIcon" visibility="package"/>
+        <Field name="ltalabat" type="JButton" visibility="package"/>
+        <Field name="restaurant_name" type="JLabel" visibility="package"/>
+        <Field name="orders" type="JLabel" visibility="package"/>
+        <Field name="orders_waiting" type="JLabel" visibility="package"/>
+        <Field name="num" type="Integer" visibility="package"/>
+        <Field name="numS" type="String" visibility="package"/>
+        <Field name="no_orders" type="JLabel" visibility="package"/>
+        <Field name="meal" type="JLabel[]" visibility="package"/>
+        <Field name="name" type="JLabel[]" visibility="package"/>
+        <Field name="button" type="JButton[]" visibility="package"/>
+        <Field name="size" type="int" visibility="package" isStatic="true"/>
+        <Field name="imgxbound" type="int" visibility="package"/>
+        <Field name="imgybound" type="int" visibility="package"/>
+        <Field name="waiting_ordersimg" type="JLabel" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="ae"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SignupCustomer" package="" visibility="public" xPosition="1857.0" yPosition="1256.0">
+      <Fields>
+        <Field name="p1" type="JPanel" visibility="package"/>
+        <Field name="p2" type="JPanel" visibility="package"/>
+        <Field name="logo" type="JLabel" visibility="package"/>
+        <Field name="rbgbut" type="JLabel" visibility="package"/>
+        <Field name="signupbut" type="JButton" visibility="package"/>
+        <Field name="tuser" type="JTextField" visibility="package"/>
+        <Field name="tpass" type="JPasswordField" visibility="package"/>
+        <Field name="tmobileno" type="JTextField" visibility="package"/>
+        <Field name="tadress" type="JTextField" visibility="package"/>
+        <Field name="c" type="Color" visibility="package"/>
+        <Field name="c1" type="Color" visibility="package"/>
+        <Field name="tborder" type="Color" visibility="package"/>
+        <Field name="lpersonimage" type="JLabel" visibility="package"/>
+        <Field name="lcircleimage" type="JLabel" visibility="package"/>
+        <Field name="person" type="ImageIcon" visibility="package"/>
+        <Field name="circle" type="ImageIcon" visibility="package"/>
+        <Field name="bg" type="ImageIcon" visibility="package"/>
+        <Field name="signup" type="ImageIcon" visibility="package"/>
+        <Field name="sep1" type="JSeparator" visibility="package"/>
+        <Field name="sep2" type="JSeparator" visibility="package"/>
+        <Field name="sep3" type="JSeparator" visibility="package"/>
+        <Field name="sep4" type="JSeparator" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SignupOwner" package="" visibility="public" xPosition="2120.0" yPosition="1275.0">
+      <Fields>
+        <Field name="p1" type="JPanel" visibility="package"/>
+        <Field name="p2" type="JPanel" visibility="package"/>
+        <Field name="logo" type="JLabel" visibility="package"/>
+        <Field name="rbgbut" type="JLabel" visibility="package"/>
+        <Field name="signupbut" type="JButton" visibility="package"/>
+        <Field name="tuser" type="JTextField" visibility="package"/>
+        <Field name="tpass" type="JPasswordField" visibility="package"/>
+        <Field name="trestaurant" type="JTextField" visibility="package"/>
+        <Field name="c" type="Color" visibility="package"/>
+        <Field name="c1" type="Color" visibility="package"/>
+        <Field name="tborder" type="Color" visibility="package"/>
+        <Field name="lperson" type="JLabel" visibility="package"/>
+        <Field name="lcircle" type="JLabel" visibility="package"/>
+        <Field name="person" type="ImageIcon" visibility="package"/>
+        <Field name="circle" type="ImageIcon" visibility="package"/>
+        <Field name="bg" type="ImageIcon" visibility="package"/>
+        <Field name="signup" type="ImageIcon" visibility="package"/>
+        <Field name="sep1" type="JSeparator" visibility="package"/>
+        <Field name="sep2" type="JSeparator" visibility="package"/>
+        <Field name="sep3" type="JSeparator" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="actionPerformed" returnType="void" visibility="public">
+          <Argument type="ActionEvent" name="e"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Talabat" package="" visibility="public" xPosition="1141.0" yPosition="1027.0">
+      <Fields>
+        <Field name="owners" type="ArrayList&lt;Owner&gt;" visibility="public" isStatic="true"/>
+        <Field name="customers" type="ArrayList&lt;Customer&gt;" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Customer" target="Person"/>
+    <UseRelation source="Order" target="Meal" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="currOrder" source="Customer" target="Order" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Owner" target="Person"/>
+    <HasRelation name="orders" source="Restaurant" target="Order" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Order&gt;"/>
+    <HasRelation name="customers" source="Talabat" target="Customer" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Customer&gt;"/>
+    <HasRelation name="meals" source="Restaurant" target="Meal" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Meal&gt;"/>
+    <HasRelation name="meals" source="Order" target="Meal" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Meal&gt;"/>
+    <HasRelation name="latestOrders" source="Customer" target="Order" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Order&gt;"/>
+    <UseRelation source="Customer" target="Meal" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Order" target="Order" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="owners" source="Talabat" target="Owner" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Owner&gt;"/>
+    <HasRelation name="restaurant" source="Owner" target="Restaurant" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
